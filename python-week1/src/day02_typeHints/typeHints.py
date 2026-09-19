@@ -4,7 +4,8 @@ More importantly for you: pydantic reads these annotations to know what to valid
 """
 
 from typing import Any
-
+from collections.abc import Iterator
+from pathlib import Path
 
 def print_names(first, last):
      print(f"{first.title()} {last.title()}")
@@ -69,3 +70,36 @@ class Person:
 
 def get_person_name(one_person: Person):
     return one_person.name
+
+
+"""
+Annotating generators
+
+from collections.abc import Iterator
+from pathlib import Path
+
+def read_employees(path: Path) -> Iterator[tuple[str, str, str, int]]:
+    ...
+
+Iterator[...] is how you annotate a generator function.
+"""
+
+
+
+#TypeAlias — naming complex types
+
+type Employee = tuple[str, str, str, int]
+type SalaryReport = dict[str, list[tuple[str, int]]]
+
+def read_employees(path: Path) -> Iterator[Employee]: ...
+def salary_report(rows: Iterator[Employee]) -> SalaryReport: ...
+
+
+# Literal — restrict to specific values
+
+from typing import Literal
+
+def set_mode(mode: Literal["read", "write", "append"]) -> None:
+    ...
+
+set_mode("delete")   # Pylance flags this
