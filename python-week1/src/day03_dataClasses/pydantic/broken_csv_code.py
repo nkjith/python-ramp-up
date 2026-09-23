@@ -25,6 +25,8 @@ def read_employees(path: Path) -> tuple[list[Employee], list[dict]]:
         next(file)
         for line_num, row in enumerate(file, start=2):
             row = row.strip()
+            if not row:
+                continue
             # first see if there are any columns missing
             try:
                 name, city, dept, salary = row.split(",")
@@ -48,7 +50,7 @@ def read_employees(path: Path) -> tuple[list[Employee], list[dict]]:
                                 })
                 continue
 
-        return valid_employees, errors
+    return valid_employees, errors
 
 
 employees, errors = read_employees(broken_csv_path)
