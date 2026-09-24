@@ -1,0 +1,105 @@
+[
+  {
+    "line": 3,
+    "record": {
+      "name": "",
+      "city": "Tacoma",
+      "department": "Design",
+      "salary": "82000"
+    },
+    "error": [
+      "loc: ('name',) message: String should have at least 1 character"
+    ]
+  },
+  {
+    "line": 4,
+    "record": {
+      "name": "Suresh Reddy",
+      "city": "Topeka",
+      "department": "Engineering",
+      "salary": "-105000"
+    },
+    "error": [
+      "loc: ('salary',) message: Input should be greater than 0"
+    ]
+  },
+  {
+    "line": 5,
+    "record": {
+      "name": "Priya Nair",
+      "city": "Sacramento",
+      "department": "Marketing",
+      "salary": "abc"
+    },
+    "error": [
+      "loc: ('salary',) message: Input should be a valid integer, unable to parse string as an integer"
+    ]
+  },
+  {
+    "line": 6,
+    "record": {
+      "name": "Vikram Singh",
+      "city": "Charlotte",
+      "department": "Engineering",
+      "salary": null
+    },
+    "error": [
+      "loc: ('salary',) message: Input should be a valid integer"
+    ]
+  },
+  {
+    "line": 8,
+    "record": {
+      "name": "Arjun Patel",
+      "city": "Tacoma",
+      "department": "Engineering",
+      "salary": "98000",
+      "_extra": [
+        "extra",
+        "fields"
+      ]
+    },
+    "error": [
+      "loc: ('_extra',) message: Extra inputs are not permitted"
+    ]
+  },
+  {
+    "line": 10,
+    "record": {
+      "name": "Rohan Gupta",
+      "city": "Charlotte",
+      "department": "Marketing",
+      "salary": ""
+    },
+    "error": [
+      "loc: ('salary',) message: Input should be a valid integer, unable to parse string as an integer"
+    ]
+  },
+  {
+    "line": 12,
+    "record": {
+      "name": "",
+      "city": "",
+      "department": "",
+      "salary": ""
+    },
+    "error": [
+      "loc: ('name',) message: String should have at least 1 character",
+      "loc: ('city',) message: String should have at least 1 character",
+      "loc: ('department',) message: String should have at least 1 character",
+      "loc: ('salary',) message: Input should be a valid integer, unable to parse string as an integer"
+    ]
+  },
+  {
+    "line": 13,
+    "record": {
+      "name": "Anjali Desai",
+      "city": "Austin",
+      "department": "Engineering",
+      "salary": "0"
+    },
+    "error": [
+      "loc: ('salary',) message: Input should be greater than 0"
+    ]
+  }
+]

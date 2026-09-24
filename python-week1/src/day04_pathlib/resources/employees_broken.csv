@@ -1,0 +1,13 @@
+name,city,department,salary
+Ravi Kumar,Austin,Engineering,95000
+,Tacoma,Design,82000
+Suresh Reddy,Topeka,Engineering,-105000
+Priya Nair,Sacramento,Marketing,abc
+Vikram Singh,Charlotte,Engineering
+Meera Iyer,Austin,Sales,71000
+Arjun Patel,Tacoma,Engineering,98000,extra,fields
+Kavya Menon,Sacramento,Design,85000
+Rohan Gupta,Charlotte,Marketing,
+Divya Rao,Topeka,Sales,69000
+,,,
+Anjali Desai,Austin,Engineering,0

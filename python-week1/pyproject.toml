@@ -19,3 +19,6 @@ build-backend = "uv_build"
 dev = [
     "ruff>=0.16.8",
 ]
+
+[tool.ruff]
+target-version = "py312"

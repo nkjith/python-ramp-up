@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ravi Kumar",
+    "city": "Austin",
+    "department": "Engineering",
+    "salary": 95000
+  },
+  {
+    "name": "Meera Iyer",
+    "city": "Austin",
+    "department": "Sales",
+    "salary": 71000
+  },
+  {
+    "name": "Kavya Menon",
+    "city": "Sacramento",
+    "department": "Design",
+    "salary": 85000
+  },
+  {
+    "name": "Divya Rao",
+    "city": "Topeka",
+    "department": "Sales",
+    "salary": 69000
+  }
+]
