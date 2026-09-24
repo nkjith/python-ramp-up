@@ -7,9 +7,9 @@ from pathlib import Path
 
 HERE = Path(__file__)
 
-print(HERE) # /Users/nkjith/Documents/Learning/python-ramp-up/python-week1/src/day04_pathlib/pathlibBasics.py
+print(HERE) # /Users/nkjith/Documents/Learning/python-ramp-up/python-ramp/src/day04_pathlib/pathlibBasics.py
 
-print(HERE.parent) # /Users/nkjith/Documents/Learning/python-ramp-up/python-week1/src/day04_pathlib
+print(HERE.parent) # /Users/nkjith/Documents/Learning/python-ramp-up/python-ramp/src/day04_pathlib
 
 print(HERE.parent.parent)
 

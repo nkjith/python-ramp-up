@@ -1,3 +1,3 @@
 {
-    "python.defaultInterpreterPath": "${workspaceFolder}/python-week1/.venv/bin/python"
+    "python.defaultInterpreterPath": "${workspaceFolder}/python-ramp/.venv/bin/python"
 }
